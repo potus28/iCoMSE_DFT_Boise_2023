@@ -1,0 +1,10 @@
+&inputpw4gww
+prefix='output/si'
+restart_gww=0
+num_nbndv(1)=16
+num_nbnds=32
+l_truncated_coulomb=.false.
+numw_prod=100
+pmat_cutoff=3d0
+s_self_lanczos=1d-8
+/

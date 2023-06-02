@@ -1,0 +1,703 @@
+
+     Program PW4GWW v.7.2 starts on  2Jun2023 at 14:13:30 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       4 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                     4
+
+     MPI processes distributed on     1 nodes
+     0 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ./output/si.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         497     497    121                 8385     8385    1021
+
+     Using Slab Decomposition
+
+     Message from routine read_rhog:
+     Conversion: K charge Gamma charge
+
+     Check: negative core charge=   -0.000075
+     Reading collected, re-writing distributed wavefunctions
+ nkstot=           1
+ after first init
+ after g stuff
+ after wfc waves
+ after davcio
+
+
+     bravais-lattice index     =            8
+     lattice parameter (alat)  =      10.2600  a.u.
+     unit-cell volume          =    1080.0456 (a.u.)^3
+     number of atoms/cell      =            8
+     number of atomic types    =            1
+     number of electrons       =        32.00
+     number of Kohn-Sham states=           32
+     kinetic-energy cutoff     =      15.0000  Ry
+     charge density cutoff     =      60.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  10.260000  celldm(2)=   1.000000  celldm(3)=   1.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Si read from file:
+     ../../pseudos/Si.pbe-n-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: 0b0bb1205258b0d07b9f9672cf965d36
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  v.5.1
+     Using radial grid of 1141 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Si             4.00    14.00000     Si( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Si  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Si  tau(   2) = (   0.5000000   0.5000000   0.0000000  )
+         3           Si  tau(   3) = (   0.0000000   0.5000000   0.5000000  )
+         4           Si  tau(   4) = (   0.5000000   0.0000000   0.5000000  )
+         5           Si  tau(   5) = (   0.2500000   0.2500000   0.2500000  )
+         6           Si  tau(   6) = (   0.7500000   0.7500000   0.2500000  )
+         7           Si  tau(   7) = (   0.7500000   0.2500000   0.7500000  )
+         8           Si  tau(   8) = (   0.2500000   0.7500000   0.7500000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:     4193 G-vectors     FFT dimensions: (  25,  25,  25)
+
+     Check: negative core charge=   -0.000075
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+    -5.7433  -1.5996  -1.5982  -1.5982  -1.5982  -1.5976  -1.5976   3.3641
+     3.3641   3.3641   3.3670   3.3670   3.3670   6.2417   6.2417   6.2417
+     6.9632   6.9632   6.9640   6.9640   6.9640   6.9648   8.8071   8.8071
+     8.8071   9.5919  14.0805  14.0805  14.2031  16.3699  16.3709  16.3738
+
+     highest occupied, lowest unoccupied level (ev):     6.2417    6.9632
+ MAX_NGM:         511        4193
+ BG1   1.0000000000000000        0.0000000000000000        0.0000000000000000     
+ BG2   0.0000000000000000        1.0000000000000000        0.0000000000000000     
+ BG3   0.0000000000000000        0.0000000000000000        1.0000000000000000     
+ V(G=0) =   0.47599921344311663     
+ KS energy:           1  -5.7433093201212682     
+ KS energy:           2  -1.5995674322217317     
+ KS energy:           3  -1.5981569999893255     
+ KS energy:           4  -1.5981548472032228     
+ KS energy:           5  -1.5981539283856547     
+ KS energy:           6  -1.5976068248755484     
+ KS energy:           7  -1.5976047458596783     
+ KS energy:           8   3.3641446207811634     
+ KS energy:           9   3.3641452733996906     
+ KS energy:          10   3.3641457078415375     
+ KS energy:          11   3.3669987256902894     
+ KS energy:          12   3.3669991726359028     
+ KS energy:          13   3.3669998011462789     
+ KS energy:          14   6.2416927488694540     
+ KS energy:          15   6.2416930939621462     
+ KS energy:          16   6.2416933019120009     
+ KS energy:          17   6.9632229201956548     
+ KS energy:          18   6.9632240327090944     
+ KS energy:          19   6.9639548674440981     
+ KS energy:          20   6.9639554089036997     
+ KS energy:          21   6.9639564034224586     
+ KS energy:          22   6.9648402266431564     
+ KS energy:          23   8.8070994886769540     
+ KS energy:          24   8.8070995570690496     
+ KS energy:          25   8.8070996934795094     
+ KS energy:          26   9.5918524435207164     
+ KS energy:          27   14.080470355549227     
+ KS energy:          28   14.080470370952478     
+ KS energy:          29   14.203107451412768     
+ KS energy:          30   16.369918361806228     
+ KS energy:          31   16.370891895033377     
+ KS energy:          32   16.373790636921260     
+ Routine energies_xc :           1  -12.242991964502103     
+ Routine energies_xc :           2  -12.707004411961417     
+ Routine energies_xc :           3  -12.704303068578481     
+ Routine energies_xc :           4  -12.704302615264567     
+ Routine energies_xc :           5  -12.704302389935544     
+ Routine energies_xc :           6  -12.703455377440584     
+ Routine energies_xc :           7  -12.703454901282289     
+ Routine energies_xc :           8  -11.173451433650454     
+ Routine energies_xc :           9  -11.173451226951357     
+ Routine energies_xc :          10  -11.173451127620453     
+ Routine energies_xc :          11  -11.169165538858570     
+ Routine energies_xc :          12  -11.169165421861569     
+ Routine energies_xc :          13  -11.169165218201972     
+ Routine energies_xc :          14  -12.033033633574556     
+ Routine energies_xc :          15  -12.033033734735074     
+ Routine energies_xc :          16  -12.033033795304616     
+ Routine energies_xc :          17  -9.6863341507848659     
+ Routine energies_xc :          18  -9.6863341353572832     
+ Routine energies_xc :          19  -9.6860966632390539     
+ Routine energies_xc :          20  -9.6860966280809606     
+ Routine energies_xc :          21  -9.6860966409445286     
+ Routine energies_xc :          22  -9.6863100572642900     
+ Routine energies_xc :          23  -10.588834921580725     
+ Routine energies_xc :          24  -10.588834922740812     
+ Routine energies_xc :          25  -10.588835045433949     
+ Routine energies_xc :          26  -14.931953468824920     
+ Routine energies_xc :          27  -10.185196772449197     
+ Routine energies_xc :          28  -10.185196755334280     
+ Routine energies_xc :          29  -8.9600571771362052     
+ Routine energies_xc :          30  -11.680318100166435     
+ Routine energies_xc :          31  -11.679108436780632     
+ Routine energies_xc :          32  -11.675522319769261     
+ Routine energies_h :           1   3.8232475685345935     
+ Routine energies_h :           2   4.7538817483395350     
+ Routine energies_h :           3   4.7516926033691957     
+ Routine energies_h :           4   4.7516943995608729     
+ Routine energies_h :           5   4.7516951005884449     
+ Routine energies_h :           6   4.7511379039199033     
+ Routine energies_h :           7   4.7511395718494729     
+ Routine energies_h :           8   3.5784645990744619     
+ Routine energies_h :           9   3.5784648829617018     
+ Routine energies_h :          10   3.5784651090680231     
+ Routine energies_h :          11   3.5756499338053782     
+ Routine energies_h :          12   3.5756501392663842     
+ Routine energies_h :          13   3.5756504133716471     
+ Routine energies_h :          14   5.3572126745328390     
+ Routine energies_h :          15   5.3572131030503556     
+ Routine energies_h :          16   5.3572133507617803     
+ Routine energies_h :          17   1.1870099289589393E-002
+ Routine energies_h :          18   1.1871100581789390E-002
+ Routine energies_h :          19   1.2736872072553354E-002
+ Routine energies_h :          20   1.2737216780214266E-002
+ Routine energies_h :          21   1.2738224969538072E-002
+ Routine energies_h :          22   1.4795423300854021E-002
+ Routine energies_h :          23   2.2589956430690243     
+ Routine energies_h :          24   2.2589957146624777     
+ Routine energies_h :          25   2.2589959748044355     
+ Routine energies_h :          26   6.0783420078031778     
+ Routine energies_h :          27   2.0270462757619003     
+ Routine energies_h :          28   2.0270462832713774     
+ Routine energies_h :          29  -2.2858181270547693     
+ Routine energies_h :          30   3.8846099427775429     
+ Routine energies_h :          31   3.8839498687920249     
+ Routine energies_h :          32   3.8820843334983075     
+stop_clock: clock # 15 for        h_psi not running
+ Transform to real wfcs
+ MATRIX BIG1
+ NRS          25          25          25
+ NRXS          25          25          25
+ Calculate grid
+ MATRIX BIG2
+ MATRIX IIW           1
+ MATRIX JJW           1
+ Calculate US
+ Out of matrix_wannier_gamma_big
+ LOCALIZING WANNIER FUNCTIONS:
+ Spread   179.98310454239788        30.154392010965637     
+ Spread   296.87791246889219        179.98310454239788     
+ Spread   317.45095078344849        296.87791246889219     
+ Spread   317.61621715422882        317.45095078344849     
+ Spread   317.61640558561743        317.61621715422882     
+ Spread   317.61640641340648        317.61640558561743     
+ Spread   317.61640641589156        317.61640641340648     
+ Spread   317.61640641590037        317.61640641589156     
+ Center Wannier:   8.9775086978321355        3.8475863717634651        3.8475863717634651     
+ Center Wannier:   3.8475861881889770        6.4124140030436756        6.4124140030436756     
+ Center Wannier:   6.4124141830096386        6.4124139333962820        6.4124139333962820     
+ Center Wannier:   1.2824909019721897        3.8475863464154263        3.8475863464154263     
+ Center Wannier:   6.4124142381546241        3.8475865363450601        3.8475865363450601     
+ Center Wannier:   8.9775088002949239        6.4124141182372503        6.4124141182372503     
+ Center Wannier:   3.8475860153604131        1.2824911123343423        1.2824911123343423     
+ Center Wannier:   1.2826475419313992        8.9773516629221231        8.9773516629221231     
+ Center Wannier:   8.9773521125538860        8.9773516725235130        8.9773516725235130     
+ Center Wannier:   1.2826475993007733        1.2826478545253630        1.2826478545253630     
+ Center Wannier:   1.2824908359824099        6.4124141252930196        6.4124141252930196     
+ Center Wannier:   3.8475860919708191        3.8475865154371980        3.8475865154371980     
+ Center Wannier:   6.4124143748580265        1.2824910541533290        1.2824910541533290     
+ Center Wannier:   8.9773519939124711        1.2826477679326589        1.2826477679326589     
+ Center Wannier:   6.4124143205161177        8.9775084477851426        8.9775084477851426     
+ Center Wannier:   3.8475861216271703        8.9775084257325819        8.9775084257325819     
+ USE RESTART: 1
+ Call initialize_fft_custom
+          15          15          15
+          15          15          15
+
+     Planes per process (custom) : nr3t =  15 nr3p =   15 ncplane =   225
+
+     Proc/  planes cols     G    
+
+        1    15    121     1021
+
+ Number of projected orthonormalized plane waves:          81
+ FK state:           1        3375         511          81
+ FK GS          81
+ FK state:           2        3375         511          81
+ FK GS          81
+ FK state:           3        3375         511          81
+ FK GS          81
+ FK state:           4        3375         511          81
+ FK GS          81
+ FK state:           5        3375         511          81
+ FK GS          49
+ FK state:           6        3375         511          81
+ FK GS          34
+ FK state:           7        3375         511          81
+ FK GS          41
+ FK state:           8        3375         511          81
+ FK GS          31
+ FK state:           9        3375         511          81
+ FK GS          16
+ FK state:          10        3375         511          81
+ FK GS          12
+ FK state:          11        3375         511          81
+ FK GS           4
+ FK state:          12        3375         511          81
+ FK GS           4
+ FK state:          13        3375         511          81
+ FK GS           9
+ FK state:          14        3375         511          81
+ FK GS           6
+ FK state:          15        3375         511          81
+ FK GS           7
+ FK state:          16        3375         511          81
+ FK GS           8
+ Calculate FK matrix
+     f_conduction :      1.00s CPU      0.26s WALL (       1 calls)
+ NUMW_PROD_ALL         100
+ ATT1         545
+ ATT2         545
+ ATT3         545
+ ATT4         545
+ ATT5         545
+ POLARIZABILITY eigen:           1   4.6392887454508465     
+ POLARIZABILITY eigen:           2   4.6402977534735950     
+ POLARIZABILITY eigen:           3   4.6412116168708764     
+ POLARIZABILITY eigen:           4   4.8947116471667993     
+ POLARIZABILITY eigen:           5   4.8978456690403860     
+ POLARIZABILITY eigen:           6   5.2639754151469731     
+ POLARIZABILITY eigen:           7   5.2650057816152422     
+ POLARIZABILITY eigen:           8   5.2661498488052612     
+ POLARIZABILITY eigen:           9   5.2666856006335880     
+ POLARIZABILITY eigen:          10   5.2669091826590240     
+ POLARIZABILITY eigen:          11   5.2685885688821195     
+ POLARIZABILITY eigen:          12   5.4265956546837728     
+ POLARIZABILITY eigen:          13   5.7889514370422841     
+ POLARIZABILITY eigen:          14   5.7922616011721164     
+ POLARIZABILITY eigen:          15   5.7940680939497931     
+ POLARIZABILITY eigen:          16   5.7942844212448765     
+ POLARIZABILITY eigen:          17   5.7950802938375006     
+ POLARIZABILITY eigen:          18   5.7955899481123332     
+ POLARIZABILITY eigen:          19   6.3262584177139143     
+ POLARIZABILITY eigen:          20   6.3275245115242846     
+ POLARIZABILITY eigen:          21   6.3280109950234937     
+ POLARIZABILITY eigen:          22   6.3552049974080020     
+ POLARIZABILITY eigen:          23   6.3585647544633854     
+ POLARIZABILITY eigen:          24   6.3591503426645879     
+ POLARIZABILITY eigen:          25   6.3602902658401028     
+ POLARIZABILITY eigen:          26   6.3629387617739681     
+ POLARIZABILITY eigen:          27   6.3640299684343109     
+ POLARIZABILITY eigen:          28   6.7392290201248137     
+ POLARIZABILITY eigen:          29   6.7436003116452099     
+ POLARIZABILITY eigen:          30   6.7475305415277411     
+ POLARIZABILITY eigen:          31   6.7501521338269637     
+ POLARIZABILITY eigen:          32   6.7520474578294181     
+ POLARIZABILITY eigen:          33   6.7539089480633105     
+ POLARIZABILITY eigen:          34   7.1405326960994078     
+ POLARIZABILITY eigen:          35   7.1426584889816933     
+ POLARIZABILITY eigen:          36   7.1432803670644933     
+ POLARIZABILITY eigen:          37   7.2201558557278602     
+ POLARIZABILITY eigen:          38   7.2204595156941735     
+ POLARIZABILITY eigen:          39   7.2213402918946965     
+ POLARIZABILITY eigen:          40   7.4998120399921646     
+ POLARIZABILITY eigen:          41   7.5025770985063609     
+ POLARIZABILITY eigen:          42   7.5040968211523040     
+ POLARIZABILITY eigen:          43   7.5063022267205710     
+ POLARIZABILITY eigen:          44   7.5088181358300208     
+ POLARIZABILITY eigen:          45   7.5105913520630168     
+ POLARIZABILITY eigen:          46   7.5115540509941638     
+ POLARIZABILITY eigen:          47   7.5121405101958043     
+ POLARIZABILITY eigen:          48   7.5125746741593975     
+ POLARIZABILITY eigen:          49   8.8384094632304855     
+ POLARIZABILITY eigen:          50   8.8423413972443043     
+ POLARIZABILITY eigen:          51   8.8456933207056903     
+ POLARIZABILITY eigen:          52   8.8494756482219490     
+ POLARIZABILITY eigen:          53   8.8501642308724389     
+ POLARIZABILITY eigen:          54   8.8516445962004600     
+ POLARIZABILITY eigen:          55   9.3271767634581035     
+ POLARIZABILITY eigen:          56   9.3293858207362828     
+ POLARIZABILITY eigen:          57   9.9328927082016403     
+ POLARIZABILITY eigen:          58   9.9371763045847867     
+ POLARIZABILITY eigen:          59   9.9388573732994150     
+ POLARIZABILITY eigen:          60   9.9399027956323938     
+ POLARIZABILITY eigen:          61   9.9406524132328222     
+ POLARIZABILITY eigen:          62   9.9427380318961553     
+ POLARIZABILITY eigen:          63   10.386715654800883     
+ POLARIZABILITY eigen:          64   10.390585947951420     
+ POLARIZABILITY eigen:          65   10.392907867410553     
+ POLARIZABILITY eigen:          66   10.393223423836265     
+ POLARIZABILITY eigen:          67   10.396165290029399     
+ POLARIZABILITY eigen:          68   10.398058844981280     
+ POLARIZABILITY eigen:          69   10.403518162116944     
+ POLARIZABILITY eigen:          70   10.406219864816682     
+ POLARIZABILITY eigen:          71   10.409352701913276     
+ POLARIZABILITY eigen:          72   10.410115763216115     
+ POLARIZABILITY eigen:          73   10.411545897245592     
+ POLARIZABILITY eigen:          74   10.413255984881639     
+ POLARIZABILITY eigen:          75   12.615236205974549     
+ POLARIZABILITY eigen:          76   12.616752347239805     
+ POLARIZABILITY eigen:          77   12.617746743012971     
+ POLARIZABILITY eigen:          78   12.707404217201129     
+ POLARIZABILITY eigen:          79   12.710507250934915     
+ POLARIZABILITY eigen:          80   12.716445093547152     
+ POLARIZABILITY eigen:          81   12.717826289253891     
+ POLARIZABILITY eigen:          82   12.718443233470856     
+ POLARIZABILITY eigen:          83   12.718983513419468     
+ POLARIZABILITY eigen:          84   15.978755582914820     
+ POLARIZABILITY eigen:          85   19.647936138937258     
+ POLARIZABILITY eigen:          86   19.650475689487159     
+ POLARIZABILITY eigen:          87   19.651181697556353     
+ POLARIZABILITY eigen:          88   20.345421912458761     
+ POLARIZABILITY eigen:          89   20.349401145583315     
+ POLARIZABILITY eigen:          90   20.350888208417807     
+ POLARIZABILITY eigen:          91   20.351594092058370     
+ POLARIZABILITY eigen:          92   20.354882724624584     
+ POLARIZABILITY eigen:          93   20.357283899713622     
+ POLARIZABILITY eigen:          94   20.359204147312461     
+ POLARIZABILITY eigen:          95   21.415293141169435     
+ POLARIZABILITY eigen:          96   21.417598040955422     
+ POLARIZABILITY eigen:          97   21.418483696922383     
+ POLARIZABILITY eigen:          98   21.418870702433697     
+ POLARIZABILITY eigen:          99   21.419913019460758     
+ POLARIZABILITY eigen:         100   21.421646818866492     
+ NGM MAX:         511        4193
+ Routine wannier_uterms : start
+ NGM MAX:         511        4193
+ uterms iiw           1
+ uterms jjw           1
+ USE RESTART: 2 LANCZOS RESTART:0
+ Routine pola_basis_lanczos
+          15          15          15
+          15          15          15
+
+     Planes per process (custom) : nr3t =  15 nr3p =   15 ncplane =   225
+
+     Proc/  planes cols     G    
+
+        1    15    121     1021
+
+ EIGEN T LOCAL:           1           1   1.8788122457423328E-003
+ EIGEN T LOCAL:           1         101   22.336317896906429     
+ pola_basis update merge-split           1           1
+ EIGEN T LOCAL:           2           1   1.8790457489443622E-003
+ EIGEN T LOCAL:           2         101   22.228811546818154     
+ pola_basis update merge-split           2           2
+ EIGEN T LOCAL:           3           1   1.8783553660806425E-003
+ EIGEN T LOCAL:           3         101   22.356999755951961     
+ pola_basis update merge-split           3           3
+ EIGEN T LOCAL:           4           1   1.8794038575381388E-003
+ EIGEN T LOCAL:           4         101   22.279671923585635     
+ pola_basis update merge-split           4           4
+ EIGEN T LOCAL:           5           1   1.8780159104509798E-003
+ EIGEN T LOCAL:           5         101   22.326128436904288     
+ pola_basis update merge-split           5           5
+ EIGEN T LOCAL:           6           1   1.8793794459976683E-003
+ EIGEN T LOCAL:           6         101   22.211748661051907     
+ pola_basis update merge-split           6           6
+ EIGEN T LOCAL:           7           1   1.8787631709360143E-003
+ EIGEN T LOCAL:           7         101   22.151317749679855     
+ pola_basis update merge-split           7           7
+ EIGEN T LOCAL:           8           1   1.8792039141526584E-003
+ EIGEN T LOCAL:           8         101   22.211964399279569     
+ pola_basis update merge-split           8           8
+ EIGEN T LOCAL:           9           1   1.8797636435397911E-003
+ EIGEN T LOCAL:           9         101   22.256656786638750     
+ pola_basis update merge-split           9           9
+ EIGEN T LOCAL:          10           1   1.8800177119511824E-003
+ EIGEN T LOCAL:          10         101   22.281223430069097     
+ pola_basis update merge-split          10          10
+ EIGEN T LOCAL:          11           1   1.8785693967353788E-003
+ EIGEN T LOCAL:          11         101   22.165093627960694     
+ pola_basis update merge-split          11          11
+ EIGEN T LOCAL:          12           1   1.8778263298888326E-003
+ EIGEN T LOCAL:          12         101   22.352315939661111     
+ pola_basis update merge-split          12          12
+ EIGEN T LOCAL:          13           1   1.8771191420179877E-003
+ EIGEN T LOCAL:          13         101   22.069975240297236     
+ pola_basis update merge-split          13          13
+ EIGEN T LOCAL:          14           1   1.8789319451832016E-003
+ EIGEN T LOCAL:          14         101   22.307524789689808     
+ pola_basis update merge-split          14          14
+ EIGEN T LOCAL:          15           1   1.8775256594467881E-003
+ EIGEN T LOCAL:          15         101   22.126356422955098     
+ pola_basis update merge-split          15          15
+ EIGEN T LOCAL:          16           1   1.8780947523996301E-003
+ EIGEN T LOCAL:          16         101   22.099742853124727     
+ pola_basis update merge-split          16          16
+ USE RESTART: 2 LANCZOS_RESTART:1
+ EIGEN GLOBAL:           1   3.4270969167863693E-006
+ EIGEN GLOBAL:         101   490.76845426091643     
+ orthonormalize_two_manifolds: basis dimension:          47
+ EIGEN GLOBAL:           1   3.3922406231438440E-006
+ EIGEN GLOBAL:         101   476.71283402919761     
+ orthonormalize_two_manifolds: basis dimension:          65
+ EIGEN GLOBAL:           1   2.9127581858357951E-006
+ EIGEN GLOBAL:         101   459.22831243622994     
+ orthonormalize_two_manifolds: basis dimension:          83
+ EIGEN GLOBAL:           1   2.8590690045573605E-006
+ EIGEN GLOBAL:         101   425.00250752346324     
+ orthonormalize_two_manifolds: basis dimension:          98
+ EIGEN GLOBAL:           1   2.8668324143949806E-006
+ EIGEN GLOBAL:         101   415.06250347477385     
+ orthonormalize_two_manifolds: basis dimension:         112
+ EIGEN GLOBAL:           1   3.3097704658731563E-006
+ EIGEN GLOBAL:         101   453.00203847405498     
+ orthonormalize_two_manifolds: basis dimension:         130
+ EIGEN GLOBAL:           1   3.2678951543004232E-006
+ EIGEN GLOBAL:         101   453.02366008027042     
+ orthonormalize_two_manifolds: basis dimension:         148
+ EIGEN GLOBAL:           1   3.1907204760720045E-006
+ EIGEN GLOBAL:         101   424.11867767456192     
+ orthonormalize_two_manifolds: basis dimension:         163
+ EIGEN GLOBAL:           1   3.1251593222449270E-006
+ EIGEN GLOBAL:         101   401.34534891580074     
+ orthonormalize_two_manifolds: basis dimension:         177
+ EIGEN GLOBAL:           1   2.7754238870736831E-006
+ EIGEN GLOBAL:         101   351.58854351173301     
+ orthonormalize_two_manifolds: basis dimension:         188
+ EIGEN GLOBAL:           1   3.1549878827879843E-006
+ EIGEN GLOBAL:         101   330.00571234041956     
+ orthonormalize_two_manifolds: basis dimension:         199
+ EIGEN GLOBAL:           1   2.6827744940020960E-006
+ EIGEN GLOBAL:         101   390.65023940376631     
+ orthonormalize_two_manifolds: basis dimension:         213
+ EIGEN GLOBAL:           1   2.6471354998825056E-006
+ EIGEN GLOBAL:         101   310.84758755529907     
+ orthonormalize_two_manifolds: basis dimension:         223
+ EIGEN GLOBAL:           1   3.0218728631831100E-006
+ EIGEN GLOBAL:         101   323.56702641117397     
+ orthonormalize_two_manifolds: basis dimension:         235
+ EIGEN GLOBAL:           1   2.9686079329077053E-006
+ EIGEN GLOBAL:         101   281.77657365919066     
+ orthonormalize_two_manifolds: basis dimension:         244
+ TOTAL NUMBER OF GLOBAL T VECTORS:          244
+ lanczos_state:           1           1
+ USE RESTART: 2 LANCZOS_RESTART:2
+ Routine self_basis_lanczos
+          15          15          15
+          15          15          15
+
+     Planes per process (custom) : nr3t =  15 nr3p =   15 ncplane =   225
+
+     Proc/  planes cols     G    
+
+        1    15    121     1021
+
+ EIGEN S LOCAL:           1           1   3.5563863005708533E-005
+ EIGEN S LOCAL:           1         101  0.24098136723194319     
+ EIGEN S LOCAL:           2           1   1.2691994040805465E-005
+ EIGEN S LOCAL:           2         101  0.24592659841305634     
+ EIGEN S LOCAL:           3           1   1.0977365119105237E-005
+ EIGEN S LOCAL:           3         101  0.24582358163743245     
+ EIGEN S LOCAL:           4           1   2.9819584441913253E-006
+ EIGEN S LOCAL:           4         101  0.24457492014548146     
+ EIGEN S LOCAL:           5           1   6.1163795752232640E-006
+ EIGEN S LOCAL:           5         101  0.24528091564851920     
+ EIGEN S LOCAL:           6           1   2.5229432283781000E-006
+ EIGEN S LOCAL:           6         101  0.24474044625305563     
+ EIGEN S LOCAL:           7           1   1.6718806466121752E-006
+ EIGEN S LOCAL:           7         101  0.24468024134400077     
+ EIGEN S LOCAL:           8           1   6.2730815951586336E-006
+ EIGEN S LOCAL:           8         101  0.23051396167484867     
+ EIGEN S LOCAL:           9           1   1.0775910464409714E-005
+ EIGEN S LOCAL:           9         101  0.23027877714598785     
+ EIGEN S LOCAL:          10           1   4.5298011205368724E-006
+ EIGEN S LOCAL:          10         101  0.23033338622826857     
+ EIGEN S LOCAL:          11           1   1.8526483684499026E-006
+ EIGEN S LOCAL:          11         101  0.23033461475981698     
+ EIGEN S LOCAL:          12           1   1.1511630204231645E-006
+ EIGEN S LOCAL:          12         101  0.23027521838575990     
+ EIGEN S LOCAL:          13           1   2.2069216635912077E-006
+ EIGEN S LOCAL:          13         101  0.23053006095603706     
+ EIGEN S LOCAL:          14           1   1.2663438844838578E-005
+ EIGEN S LOCAL:          14         101  0.23043746163426668     
+ EIGEN S LOCAL:          15           1   1.1609555926549817E-005
+ EIGEN S LOCAL:          15         101  0.23027682603627087     
+ EIGEN S LOCAL:          16           1   1.0909905292667260E-005
+ EIGEN S LOCAL:          16         101  0.23039430009813996     
+ EIGEN S LOCAL:          17           1   1.0338098732992942E-005
+ EIGEN S LOCAL:          17         101  0.23229213367324988     
+ EIGEN S LOCAL:          18           1   1.3939908945452569E-005
+ EIGEN S LOCAL:          18         101  0.23229522068097835     
+ EIGEN S LOCAL:          19           1   1.4279230625274146E-005
+ EIGEN S LOCAL:          19         101  0.23242641199130459     
+ EIGEN S LOCAL:          20           1   1.1923303425974946E-005
+ EIGEN S LOCAL:          20         101  0.23215787962377277     
+ EIGEN S LOCAL:          21           1   1.5865756187651983E-005
+ EIGEN S LOCAL:          21         101  0.23255857199820165     
+ EIGEN S LOCAL:          22           1   1.6084192126694708E-005
+ EIGEN S LOCAL:          22         101  0.23260914087407827     
+ EIGEN S LOCAL:          23           1   1.7556568522524240E-005
+ EIGEN S LOCAL:          23         101  0.22913116308084164     
+ EIGEN S LOCAL:          24           1   1.2359492476104112E-005
+ EIGEN S LOCAL:          24         101  0.22910969244552865     
+ EIGEN S LOCAL:          25           1   1.8504469032161764E-005
+ EIGEN S LOCAL:          25         101  0.22914773408443703     
+ EIGEN S LOCAL:          26           1   3.2021500863959930E-005
+ EIGEN S LOCAL:          26         101  0.25752241418138139     
+ EIGEN S LOCAL:          27           1   1.7238428319363934E-005
+ EIGEN S LOCAL:          27         101  0.22616708612158329     
+ EIGEN S LOCAL:          28           1   1.8724316403637962E-005
+ EIGEN S LOCAL:          28         101  0.22616713825956311     
+ EIGEN S LOCAL:          29           1   2.0775569589540230E-005
+ EIGEN S LOCAL:          29         101  0.23589003332125649     
+ EIGEN S LOCAL:          30           1   1.8350439521065334E-005
+ EIGEN S LOCAL:          30         101  0.23232715314637270     
+ EIGEN S LOCAL:          31           1   1.5655212440546835E-005
+ EIGEN S LOCAL:          31         101  0.23207237618949156     
+ EIGEN S LOCAL:          32           1   1.0095721803255636E-005
+ EIGEN S LOCAL:          32         101  0.23218007661743795     
+     self_basis   :      0.79s CPU      0.27s WALL (       1 calls)
+     sl_loop      :      0.76s CPU      0.26s WALL (      32 calls)
+ USE RESTART: 2 LANCZOS_RESTART:3
+ EIGEN GLOBAL:           1   1.5624792288507095E-011
+ EIGEN GLOBAL:         101   5.5546405633551935E-004
+ orthonormalize_two_manifolds: basis dimension:         117
+ EIGEN GLOBAL:           1   1.0834461527637721E-011
+ EIGEN GLOBAL:         101   4.8007088779284253E-004
+ orthonormalize_two_manifolds: basis dimension:         130
+ EIGEN GLOBAL:           1   1.2947946745126602E-012
+ EIGEN GLOBAL:         101   4.0986176923399993E-004
+ orthonormalize_two_manifolds: basis dimension:         141
+ EIGEN GLOBAL:           1   3.0388057070196619E-012
+ EIGEN GLOBAL:         101   3.6172106942721763E-004
+ orthonormalize_two_manifolds: basis dimension:         150
+ EIGEN GLOBAL:           1   9.2058460612178553E-013
+ EIGEN GLOBAL:         101   2.6348029044927966E-004
+ orthonormalize_two_manifolds: basis dimension:         159
+ EIGEN GLOBAL:           1   6.1645340977337119E-013
+ EIGEN GLOBAL:         101   2.3179356466570939E-004
+ orthonormalize_two_manifolds: basis dimension:         168
+ EIGEN GLOBAL:           1   6.9299949995261096E-012
+ EIGEN GLOBAL:         101   2.7549126858281663E-004
+ orthonormalize_two_manifolds: basis dimension:         181
+ EIGEN GLOBAL:           1   2.2946401754237673E-011
+ EIGEN GLOBAL:         101   1.8629891968267311E-004
+ orthonormalize_two_manifolds: basis dimension:         193
+ EIGEN GLOBAL:           1   3.7721212490242332E-012
+ EIGEN GLOBAL:         101   1.4052569103623015E-004
+ orthonormalize_two_manifolds: basis dimension:         203
+ EIGEN GLOBAL:           1   6.4746616452879866E-013
+ EIGEN GLOBAL:         101   1.2765744638931680E-004
+ orthonormalize_two_manifolds: basis dimension:         214
+ EIGEN GLOBAL:           1   2.2779252465277885E-013
+ EIGEN GLOBAL:         101   1.5345534452168558E-004
+ orthonormalize_two_manifolds: basis dimension:         222
+ EIGEN GLOBAL:           1   7.4765720073023192E-013
+ EIGEN GLOBAL:         101   1.9866437806710991E-004
+ orthonormalize_two_manifolds: basis dimension:         230
+ EIGEN GLOBAL:           1   1.7080621865127003E-011
+ EIGEN GLOBAL:         101   7.6896352840420717E-005
+ orthonormalize_two_manifolds: basis dimension:         238
+ EIGEN GLOBAL:           1   1.7452212584935418E-011
+ EIGEN GLOBAL:         101   1.4684583687327862E-004
+ orthonormalize_two_manifolds: basis dimension:         245
+ EIGEN GLOBAL:           1   1.2793534984130770E-011
+ EIGEN GLOBAL:         101   1.0417927862787151E-004
+ orthonormalize_two_manifolds: basis dimension:         252
+ EIGEN GLOBAL:           1   1.8445791203385665E-011
+ EIGEN GLOBAL:         101   1.4196606247677591E-004
+ orthonormalize_two_manifolds: basis dimension:         261
+ EIGEN GLOBAL:           1   1.9584808194888940E-011
+ EIGEN GLOBAL:         101   1.6012290459374058E-004
+ orthonormalize_two_manifolds: basis dimension:         269
+ EIGEN GLOBAL:           1   1.5008329314780034E-011
+ EIGEN GLOBAL:         101   1.4383506716105873E-004
+ orthonormalize_two_manifolds: basis dimension:         276
+ EIGEN GLOBAL:           1   2.0362826912837570E-011
+ EIGEN GLOBAL:         101   1.3616410517304416E-004
+ orthonormalize_two_manifolds: basis dimension:         284
+ EIGEN GLOBAL:           1   9.1450608937818547E-012
+ EIGEN GLOBAL:         101   1.3467144446457658E-004
+ orthonormalize_two_manifolds: basis dimension:         291
+ EIGEN GLOBAL:           1   8.6712731594213051E-012
+ EIGEN GLOBAL:         101   1.3376194401542370E-004
+ orthonormalize_two_manifolds: basis dimension:         296
+ EIGEN GLOBAL:           1   2.1451514953813062E-011
+ EIGEN GLOBAL:         101   3.9678730774675400E-005
+ orthonormalize_two_manifolds: basis dimension:         304
+ EIGEN GLOBAL:           1   1.2360283138505316E-011
+ EIGEN GLOBAL:         101   4.0478506176832336E-005
+ orthonormalize_two_manifolds: basis dimension:         311
+ EIGEN GLOBAL:           1   1.2572828719011386E-011
+ EIGEN GLOBAL:         101   3.0986496426281597E-005
+ orthonormalize_two_manifolds: basis dimension:         318
+ EIGEN GLOBAL:           1   1.0350216207346872E-011
+ EIGEN GLOBAL:         101   4.5524096445587105E-005
+ orthonormalize_two_manifolds: basis dimension:         324
+ EIGEN GLOBAL:           1   5.3514604246568123E-011
+ EIGEN GLOBAL:         101   1.3535620779336704E-004
+ orthonormalize_two_manifolds: basis dimension:         337
+ EIGEN GLOBAL:           1   4.5990910264453806E-011
+ EIGEN GLOBAL:         101   1.2641057301363134E-004
+ orthonormalize_two_manifolds: basis dimension:         349
+ EIGEN GLOBAL:           1   3.1796341041352328E-012
+ EIGEN GLOBAL:         101   4.8978576415020225E-005
+ orthonormalize_two_manifolds: basis dimension:         350
+ EIGEN GLOBAL:           1   4.7959902426244919E-011
+ EIGEN GLOBAL:         101   2.2211793325442480E-005
+ orthonormalize_two_manifolds: basis dimension:         362
+ EIGEN GLOBAL:           1   2.6858932627629376E-011
+ EIGEN GLOBAL:         101   2.0510135405118733E-005
+ orthonormalize_two_manifolds: basis dimension:         374
+ EIGEN GLOBAL:           1   5.8026045227997898E-012
+ EIGEN GLOBAL:         101   1.6763054654478163E-005
+ orthonormalize_two_manifolds: basis dimension:         387
+ TOTAL NUMBER OF GLOBAL S VECTORS:          387
+ lanczos_state:           1           1
+ USE RESTART: 3 LANCZOS_RESTART /=2,3
+ Routine calculate_wing
+ ATT0.1
